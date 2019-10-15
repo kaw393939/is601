@@ -1,8 +1,5 @@
 FROM python:3
 
-ADD ExperimentTests.py /
-ADD Experiment.py /
+ADD src /src
 
-RUN pip install pystrich
-
-CMD [ "python", "./ExperimentTests.py" ]
+CMD [ "python", "./src/ExperimentTests.py" ]
